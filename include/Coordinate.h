@@ -28,6 +28,15 @@ struct Coordinate
     std::size_t col;
     std::pair<std::size_t, std::size_t> coords{};
 
+    //!########################
+    //! Getters
+    //!########################
+    std::size_t get_row() { return this->row; }
+    std::size_t get_col() { return this->col; }
+
+    //!########################
+    //! Overloads
+    //!########################
     friend std::ostream& operator<<(std::ostream& os, const Coordinate& coord)
     {
         os << "(" << coord.row << ", " << coord.col << ")";
