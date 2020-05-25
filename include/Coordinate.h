@@ -1,9 +1,12 @@
 #ifndef AMG_COORDINATE_H
 #define AMG_COORDINATE_H
 
+//! Standard C/C++
 #include <iostream>
-namespace AMG {
+#include <utility>
 
+namespace AMG
+{
 struct Coordinate
 {
     Coordinate()
@@ -31,6 +34,7 @@ struct Coordinate
         return os;
     }
 }; // class Coordinate
+
 } // namespace AMG
 
 #endif // AMG_COORDINATE_H
