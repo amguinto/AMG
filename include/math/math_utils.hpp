@@ -5,7 +5,6 @@
 //! Standard C/C++
 #include <cmath>
 #include <iostream>
-#include <utility>
 
 //! AMG
 #include "../Coordinate.h"
