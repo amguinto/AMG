@@ -44,6 +44,11 @@ struct Coordinate
     }
 }; // class Coordinate
 
+inline bool operator==(const Coordinate& LHS, const Coordinate& RHS)
+{
+    return (LHS.row == RHS.row &&
+            LHS.col == RHS.col);
+}
 } // namespace AMG
 
 #endif // AMG_COORDINATE_H
