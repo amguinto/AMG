@@ -15,12 +15,11 @@ namespace math
 {
 #ifndef VALID_TYPES
 #define VALID_TYPES(_TYPE_)                                         \
-_TYPE_ cantor_pairing(_TYPE_ x, _TYPE_ y)                           \
+inline _TYPE_ cantor_pairing(const _TYPE_ x, const _TYPE_ y)        \
 {                                                                   \
-    auto result = 0.5 * (x + y) * (x + y + 1) + y;                  \
-    return result;                                                  \
+    return 0.5 * (x + y) * (x + y + 1) + y;                         \
 }                                                                   \
-AMG::Coordinate inverse_cantor_pairing(_TYPE_ num)                  \
+inline AMG::Coordinate inverse_cantor_pairing(const _TYPE_ num)     \
 {                                                                   \
     auto w = std::floor((std::sqrt(8 * num + 1) - 1) / 2);          \
     auto t = (std::pow(w, 2) + w) / 2;                              \

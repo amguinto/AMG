@@ -6,4 +6,4 @@ add_compile_options(-Wall -Wextra -Wpedantic)
 set(CMAKE_CXX_STANDARD 14)
 add_library(${PROJECT_NAME} OBJECT
         include/Coordinate.h
-        include/math/math_utils.hpp)
+        include/math/math_utils.h)
